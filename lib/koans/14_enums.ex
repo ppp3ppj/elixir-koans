@@ -73,7 +73,7 @@ defmodule Enums do
   def divisible_by_five?(n), do: rem(n, 5) == 0
 
   koan "...but you don't quite find it..." do
-    assert Enum.find([1, 2, 3], &divisible_by_five?/1) == :nil
+    assert Enum.find([1, 2, 3], &divisible_by_five?/1) == nil
   end
 
   koan "...you can settle for a consolation prize" do
